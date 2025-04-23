@@ -1,19 +1,20 @@
+
 /* Reset simples */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
     padding-bottom: 50px;
-  }
-  
-  header {
+}
+
+header {
     background-color: #0b1a2a;
     color: white;
     padding: 10px 20px;
@@ -22,61 +23,57 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
-  }
-  
-  .logo {
+}
+
+.logo {
     max-height: 80px;
     height: auto;
     width: auto;
-  }
-.logo {
-  max-width: 100%;
-  height: auto;
 }
-  
-  nav ul {
+
+/* Menu padrão no desktop */
+.menu ul {
     list-style: none;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-  }
-  
-  nav a {
+}
+
+nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     text-decoration: underline;
-  }
-  
-  section {
+}
+
+section {
     padding: 40px 20px;
     max-width: 900px;
     margin: 0 auto;
-    
-  }
-  
-  section h2 {
+}
+
+section h2 {
     color: #0d2b4e;
     margin-bottom: 10px;
-  }
-  
-  ul li {
+}
+
+ul li {
     margin: 10px 0;
-  }
-  
-  footer {
+}
+
+footer {
     background-color: #0d2b4e;
     color: white;
     text-align: center;
     padding: 20px;
     width: 100%;
-  }
-  
-  /* Destaque para seção inicial */
-  #inicio {
+}
+
+/* Destaque para seção inicial */
+#inicio {
     background-color: #f2f2f2;
     width: 90%;
     margin: auto;
@@ -84,91 +81,71 @@
     padding: 30px 20px;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
-  }
-  
-  #inicio h1 {
+}
+
+#inicio h1 {
     color: #0d2b4e;
     font-size: 2.5rem;
     margin-bottom: 10px;
-  }
-  
-  #inicio p {
+}
+
+#inicio p {
     font-size: 1.2rem;
     color: #333;
-  }
-  
-  /* Estilo para contatos */
-  #contato p {
+}
+
+/* Estilo para contatos */
+#contato p {
     margin: 8px 0;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      gap: 10px;
-      align-items: flex-start;
-    }
-  
-    header {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .logo {
-      margin-bottom: 10px;
-    }
-  
-    section {
-      padding: 30px 15px;
-    }
-  
-    #inicio h1 {
-      font-size: 2rem;
-    }
-  
-    #inicio p {
-      font-size: 1rem;
-    }
-  }
-  
-  .menu-toggle {
+}
+
+/* Botão do menu (☰) escondido no desktop */
+.menu-toggle {
     display: none;
     background: none;
     border: none;
     font-size: 2rem;
     color: white;
     cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-    nav ul {
-      display: none;
-      flex-direction: column;
-      background-color: #0b1a2a;
-      width: 100%;
-      padding: 10px 0;
-    }
-      
-    .menu ul.active {
-    display: flex;
-  }
-  
-    nav ul.active {
-      display: flex;
-    }
-  
-    .menu-toggle {
-      display: block;
-    }
-  
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
     header {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
-  
+
     .logo {
-      max-height: 60px;
+        max-height: 60px;
     }
-  }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #0b1a2a;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu ul.active {
+        display: flex;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    #inicio h1 {
+        font-size: 2rem;
+    }
+
+    #inicio p {
+        font-size: 1rem;
+    }
+}
