@@ -29,6 +29,10 @@
     height: auto;
     width: auto;
   }
+.logo {
+  max-width: 100%;
+  height: auto;
+}
   
   nav ul {
     list-style: none;
