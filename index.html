@@ -10,7 +10,10 @@
   <!-- Cabeçalho -->
   <header>
     <img src="logo.png.png" alt="Transformais Construções e Reformas" class="logo">
-    <nav>
+  
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+  
+    <nav class="menu">
       <ul>
         <li><a href="#inicio">Início</a></li>
         <li><a href="#sobre">Quem Somos</a></li>
@@ -56,4 +59,12 @@
     <p>&copy; 2025 Transformais Construções e Reformas. Todos os direitos reservados.</p>
   </footer>
 </body>
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu ul');
+  
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
 </html>
