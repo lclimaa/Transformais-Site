@@ -145,6 +145,10 @@
       width: 100%;
       padding: 10px 0;
     }
+      
+    .menu ul.active {
+    display: flex;
+  }
   
     nav ul.active {
       display: flex;
