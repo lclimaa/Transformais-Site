@@ -60,6 +60,10 @@ section h2 {
     margin-bottom: 10px;
 }
 
+section ul {
+    padding-left: 20px ;
+}
+
 ul li {
     margin: 10px 0;
 }
