@@ -60,12 +60,9 @@ section h2 {
     margin-bottom: 10px;
 }
 
-section ul {
-    padding-left: 20px ;
-}
-
 ul li {
-    margin: 10px 0;
+    margin: 10px 20px;
+    padding-left: 15px;
 }
 
 footer {
@@ -101,6 +98,11 @@ footer {
 /* Estilo para contatos */
 #contato p {
     margin: 8px 0;
+}
+
+/* Estilo para serviços */
+#servicos {
+  
 }
 
 /* Botão do menu (☰) escondido no desktop */
