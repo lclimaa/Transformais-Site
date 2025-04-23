@@ -18,21 +18,22 @@
     color: white;
     padding: 10px 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
   
   .logo {
-        height: auto;
-        max-height: 80px;
-        width: auto;
+    max-height: 80px;
+    height: auto;
+    width: auto;
   }
   
   nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
   }
   
   nav a {
@@ -49,7 +50,7 @@
     padding: 40px 20px;
     max-width: 900px;
     margin: 0 auto;
-    align-items: center;
+    text-align: center;
   }
   
   section h2 {
@@ -66,17 +67,14 @@
     color: white;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
     width: 100%;
   }
   
   /* Destaque para seção inicial */
   #inicio {
     background-color: #f2f2f2;
-    max-width: 100%;
     width: 90%;
-    height: auto;
+    margin: auto;
     text-align: center;
     padding: 30px 20px;
     border-bottom-right-radius: 60px;
@@ -99,14 +97,33 @@
     margin: 8px 0;
   }
   
-  @media (max-width: 600px) {
+  /* Responsividade */
+  @media (max-width: 768px) {
     nav ul {
       flex-direction: column;
+      gap: 10px;
       align-items: flex-start;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: center;
     }
   
     .logo {
       margin-bottom: 10px;
+    }
+  
+    section {
+      padding: 30px 15px;
+    }
+  
+    #inicio h1 {
+      font-size: 2rem;
+    }
+  
+    #inicio p {
+      font-size: 1rem;
     }
   }
   
