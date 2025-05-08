@@ -102,8 +102,57 @@ footer {
 
 /* Estilo para serviços */
 #servicos {
-  
+    padding: 40px 20px;
+    background-color: #f9f9f9;
 }
+
+#servicos h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .servico-item {
+    margin-bottom: 40px;
+  }
+  
+  .servico-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .servico-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 10px;
+  }
+  
+  .galeria-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .galeria-grid img:hover {
+    transform: scale(1.05);
+  }
+
+  .oculta {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+  }
 
 /* Botão do menu (☰) escondido no desktop */
 .menu-toggle {

@@ -5,11 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transformais Construções e Reformas</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- jQuery (necessário para Lightbox2 funcionar) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
   <!-- Cabeçalho -->
   <header>
-    <img src="logo.png.png" alt="Transformais Construções e Reformas" class="logo">
+    <img src="imagens/logo.png" alt="Transformais Construções e Reformas" class="logo">
   
     <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
   
@@ -39,10 +45,41 @@
   <section id="servicos"    >
     <h2>Serviços</h2>
     <ul>
-      <li>Construções e reformas</li>
-      <li>Pintura</li>
-      <li>Manutenções</li>
       <li>Comércio de equipamentos e produtos</li>
+      <li>Construções e reformas</li>
+      <li>Manutenções</li>
+      <li>Pintura</li>
+      <li>Piscinas</li>
+
+  <div class="servico-item">
+    <h4>Piscina De Alvenaria</h4>
+   
+    
+    <!-- Galeria de Piscinas -->
+    <div class="galeria-grid">
+      <!-- Miniatura visível -->
+      <a href="imagens/piscinapedro/piscina1.jpg" data-lightbox="piscinapedro" data-title="Piscina - Projeto 1">
+        <img src="imagens/piscinapedro/piscina1.jpg" alt="Piscina 1" style="width: 180px; border-radius: 10px;">
+      </a>
+      <!-- Demais imagens do mesmo serviço (invisíveis) -->
+      <a href="imagens/piscinapedro/piscina2.jpg" data-lightbox="piscinapedro" class="oculta"></a>
+      <a href="imagens/piscinapedro/piscina3.jpg" data-lightbox="piscinapedro" class="oculta"></a>
+      <a href="imagens/piscinapedro/piscina4.jpg" data-lightbox="piscinapedro" class="oculta"></a>
+      <a href="imagens/piscinapedro/piscina5.jpg" data-lightbox="piscinapedro" class="oculta"></a>
+      <a href="imagens/piscinapedro/piscina6.jpg" data-lightbox="piscinapedro" class="oculta"></a>
+      <a href="imagens/piscinapedro/piscina7.jpg" data-lightbox="piscinapedro" class="oculta"></a>
+      <a href="imagens/piscinapedro/piscina8.jpg" data-lightbox="piscinapedro" class="oculta"></a>
+      <a href="imagens/piscinapedro/piscina9.jpg" data-lightbox="piscinapedro" class="oculta"></a>
+      <a href="imagens/piscinapedro/piscina10.jpg" data-lightbox="piscinapedro" class="oculta"></a>
+      <a href="imagens/piscinapedro/piscina11.jpg" data-lightbox="piscinapedro" class="oculta"></a>
+      <a href="imagens/piscinapedro/piscina12.jpg" data-lightbox="piscinapedro" class="oculta"></a>
+    </div>
+  </div>
+
+  <!-- Você pode repetir o bloco acima para cada serviço -->
+</section>
+
+
     </ul>
   </section>
 
@@ -64,9 +101,13 @@
    class="whatsapp-float" 
    target="_blank" 
    aria-label="Conversar no WhatsApp">
-  <img src="https://img.icons8.com/color/48/000000/whatsapp.png" 
+  <img src="imagens/whatsapp.png" 
        alt="WhatsApp" />
 </a>
+
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
 
 
 </body>
